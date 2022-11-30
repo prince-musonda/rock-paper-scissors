@@ -1,0 +1,82 @@
+body{
+    background-image: url(images/rps_background.png);
+    
+}
+h1,h2{
+    text-align: center;
+}
+h2{
+    margin-top: 1px;
+}
+#main-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    height: 400px;
+    
+}
+
+#display-results-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#computer-results, #user-results{
+    font-size: 25px;
+
+}
+#buttons-container{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+button{
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: white;
+    font-size: large;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+button:active{
+    box-sizing: border-box;
+    background-color: rgba(60, 154, 243, 0.849);
+    color:black;
+    border:1px solid white;
+}
+
+#game-stats-container{
+    width: 400px;
+    background-color: white;
+    font-size: 20px;
+    
+}
+#choices-display div:nth-child(2n){
+    background-color: rgba(128, 128, 128, 0.582);
+    color: whitesmoke;
+}
+#game-stats-container p{
+    margin: 0;
+    padding: 10px;
+}
+#choices-display{
+    padding: 10px;
+    height: 80%;
+    overflow:auto;
+    text-overflow: ellipsis;
+}
+#choices-heading{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(63, 242, 248, 0.788);
+}
+
+small{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display:block;
+    margin-bottom: 0;
+}
